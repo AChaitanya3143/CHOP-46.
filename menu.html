@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | CHOP 46 — Full Chinese Food Menu with Prices | Kalwa, Thane</title>
+  <meta name="description" content="Browse CHOP 46's complete Chinese food menu. Starters, soups, rice, noodles, gravies & combos. ₹120-₹400. Build your order and send via WhatsApp!">
+  <meta name="keywords" content="CHOP 46 menu, Chinese food menu Kalwa, Chinese restaurant prices Thane, order Chinese food online">
+  <meta name="theme-color" content="#E63946">
+  <link rel="canonical" href="https://achaitanya3143.github.io/menu.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="scroll-progress"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" role="status" aria-label="Loading">
+    <div class="preloader-logo">CHOP <span>46</span></div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="CHOP 46 Home">CHOP 46<span>Chinese Cuisine</span></a>
+      <div class="nav-links" id="navLinks" role="menubar">
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="menu.html" class="active" role="menuitem">Menu</a>
+        <a href="gallery.html" role="menuitem">Gallery</a>
+        <a href="about.html" role="menuitem">About</a>
+        <a href="offers.html" role="menuitem">Offers</a>
+        <a href="contact.html" role="menuitem">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="live-status open" id="liveStatus"><span class="status-dot"></span> Open Now</div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <a href="tel:+917710904746" class="nav-cta" aria-label="Call CHOP 46"><i class="fas fa-phone"></i> Call Now</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- Menu Page Header -->
+  <section class="menu-page-header">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag"><i class="fas fa-scroll" aria-hidden="true"></i> FULL MENU</div>
+        <h1 class="section-title">Explore Our <span class="gold">Complete Menu</span></h1>
+        <p class="section-desc" style="margin: 0 auto;">From soups to sizzlers, noodles to rice bowls — we've got a flavor for every mood. Build your order and send it via WhatsApp!</p>
+      </div>
+
+      <!-- Smart Search -->
+      <div class="menu-search-bar fade-in">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input type="text" id="menuSearch" placeholder="Search dishes... (e.g. chicken, paneer, noodles)" aria-label="Search menu items">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="section" style="background: var(--bg-secondary); padding-top: 30px;" aria-label="Menu items">
+    <div class="container">
+
+      <!-- Menu Controls Row -->
+      <div class="menu-controls fade-in">
+        <!-- Diet Toggle -->
+        <div class="diet-toggle" role="group" aria-label="Diet filter">
+          <button class="diet-btn active-all" data-diet="all">All</button>
+          <button class="diet-btn" data-diet="veg"><i class="fas fa-leaf" style="color: var(--veg-green); margin-right: 4px;"></i> Veg</button>
+          <button class="diet-btn" data-diet="nonveg"><i class="fas fa-drumstick-bite" style="color: var(--non-veg-red); margin-right: 4px;"></i> Non-Veg</button>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-filter" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" data-category="all" role="tab" aria-selected="true">All</button>
+          <button class="menu-tab" data-category="starters" role="tab" aria-selected="false">Starters</button>
+          <button class="menu-tab" data-category="soups" role="tab" aria-selected="false">Soups</button>
+          <button class="menu-tab" data-category="rice" role="tab" aria-selected="false">Rice</button>
+          <button class="menu-tab" data-category="noodles" role="tab" aria-selected="false">Noodles</button>
+          <button class="menu-tab" data-category="gravy" role="tab" aria-selected="false">Gravies</button>
+          <button class="menu-tab" data-category="specials" role="tab" aria-selected="false">Specials</button>
+        </div>
+      </div>
+
+      <!-- Menu Items List -->
+      <div class="menu-list" role="list">
+
+        <!-- No Results Message -->
+        <div class="menu-no-results" id="menuNoResults" style="display: none;">
+          <i class="fas fa-search"></i>
+          <p>No dishes found matching your search.</p>
+          <p style="font-size: 0.85rem;">Try a different keyword or category.</p>
+        </div>
+
+        <!-- Starters Category -->
+        <div class="menu-category-header fade-in" data-category="starters">
+          <h3><i class="fas fa-drumstick-bite" aria-hidden="true"></i> Starters</h3>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Crispy
+              <span class="menu-special-badge">🔥 Bestseller</span>
+            </div>
+            <p class="menu-item-desc">Golden-fried boneless chicken tossed in house spice blend</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹220</div>
+            <button class="add-to-order" data-name="Chicken Crispy" data-price="220"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Lollipop (Dry)
+            </div>
+            <p class="menu-item-desc">Crispy drumettes with signature masala glaze</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹200</div>
+            <button class="add-to-order" data-name="Chicken Lollipop (Dry)" data-price="200"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Lollipop (Gravy)
+            </div>
+            <p class="menu-item-desc">Succulent lollipops in rich Chinese gravy</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹220</div>
+            <button class="add-to-order" data-name="Chicken Lollipop (Gravy)" data-price="220"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken 65
+            </div>
+            <p class="menu-item-desc">Spicy deep-fried chicken with curry leaves & chillies</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹220</div>
+            <button class="add-to-order" data-name="Chicken 65" data-price="220"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Hot Garlic
+            </div>
+            <p class="menu-item-desc">Boneless chicken in fiery garlic sauce with peppers</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹250</div>
+            <button class="add-to-order" data-name="Chicken Hot Garlic" data-price="250"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Manchurian (Dry)
+            </div>
+            <p class="menu-item-desc">Fried chicken balls tossed in tangy Manchurian sauce</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹220</div>
+            <button class="add-to-order" data-name="Chicken Manchurian (Dry)" data-price="220"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Dragon Chicken
+            </div>
+            <p class="menu-item-desc">Spicy & tangy chicken with dried red chillies</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹250</div>
+            <button class="add-to-order" data-name="Dragon Chicken" data-price="250"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Paneer Chilli (Dry)
+            </div>
+            <p class="menu-item-desc">Crispy paneer cubes with peppers in spicy sauce</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹200</div>
+            <button class="add-to-order" data-name="Paneer Chilli (Dry)" data-price="200"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Veg Manchurian (Dry)
+            </div>
+            <p class="menu-item-desc">Mixed veggie balls in tangy soy-chilli sauce</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹180</div>
+            <button class="add-to-order" data-name="Veg Manchurian (Dry)" data-price="180"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="starters" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Crispy Corn
+            </div>
+            <p class="menu-item-desc">Golden corn kernels tossed with spices & herbs</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹180</div>
+            <button class="add-to-order" data-name="Crispy Corn" data-price="180"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <!-- Soups Category -->
+        <div class="menu-category-header fade-in" data-category="soups">
+          <h3><i class="fas fa-bowl-food" aria-hidden="true"></i> Soups</h3>
+        </div>
+        <div class="menu-item fade-in" data-category="soups" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Sweet Corn Soup
+            </div>
+            <p class="menu-item-desc">Creamy corn soup with fresh vegetables</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹120</div>
+            <button class="add-to-order" data-name="Sweet Corn Soup" data-price="120"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="soups" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Hot & Sour Soup
+            </div>
+            <p class="menu-item-desc">Tangy & spicy soup with mushrooms & tofu</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹120</div>
+            <button class="add-to-order" data-name="Hot & Sour Soup" data-price="120"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="soups" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Sweet Corn Soup
+            </div>
+            <p class="menu-item-desc">Creamy corn soup with shredded chicken</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹150</div>
+            <button class="add-to-order" data-name="Chicken Sweet Corn Soup" data-price="150"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="soups" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Hot & Sour Soup
+            </div>
+            <p class="menu-item-desc">Spicy & tangy soup loaded with chicken</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹150</div>
+            <button class="add-to-order" data-name="Chicken Hot & Sour Soup" data-price="150"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="soups" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Manchow Soup (Chicken)
+            </div>
+            <p class="menu-item-desc">Thick soup with crispy noodle topping</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹150</div>
+            <button class="add-to-order" data-name="Manchow Soup (Chicken)" data-price="150"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <!-- Rice Category -->
+        <div class="menu-category-header fade-in" data-category="rice">
+          <h3><i class="fas fa-bowl-rice" aria-hidden="true"></i> Rice</h3>
+        </div>
+        <div class="menu-item fade-in" data-category="rice" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Veg Fried Rice
+            </div>
+            <p class="menu-item-desc">Wok-tossed rice with fresh mixed vegetables</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹150</div>
+            <button class="add-to-order" data-name="Veg Fried Rice" data-price="150"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="rice" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Fried Rice
+            </div>
+            <p class="menu-item-desc">Classic fried rice with juicy chicken pieces</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹180</div>
+            <button class="add-to-order" data-name="Chicken Fried Rice" data-price="180"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="rice" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Egg Fried Rice
+            </div>
+            <p class="menu-item-desc">Fluffy egg-tossed rice with spring onions</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹160</div>
+            <button class="add-to-order" data-name="Egg Fried Rice" data-price="160"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="rice" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Special Fried Rice
+            </div>
+            <p class="menu-item-desc">Loaded with chicken, egg, veggies & crispy toppings</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹200</div>
+            <button class="add-to-order" data-name="Special Fried Rice" data-price="200"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="rice" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Cheese King Rice
+              <span class="menu-special-badge">👑 King</span>
+            </div>
+            <p class="menu-item-desc">Cheesy rice loaded with veggies & melted cheese</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹230</div>
+            <button class="add-to-order" data-name="Cheese King Rice" data-price="230"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="rice" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Schezwan Chicken Rice
+            </div>
+            <p class="menu-item-desc">Spicy schezwan rice with chicken & peppers</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹200</div>
+            <button class="add-to-order" data-name="Schezwan Chicken Rice" data-price="200"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <!-- Noodles Category -->
+        <div class="menu-category-header fade-in" data-category="noodles">
+          <h3><i class="fas fa-utensils" aria-hidden="true"></i> Noodles</h3>
+        </div>
+        <div class="menu-item fade-in" data-category="noodles" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Veg Hakka Noodles
+            </div>
+            <p class="menu-item-desc">Stir-fried noodles with fresh vegetables & soy</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹150</div>
+            <button class="add-to-order" data-name="Veg Hakka Noodles" data-price="150"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="noodles" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Hakka Noodles
+            </div>
+            <p class="menu-item-desc">Classic hakka noodles with juicy chicken</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹180</div>
+            <button class="add-to-order" data-name="Chicken Hakka Noodles" data-price="180"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="noodles" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Egg Noodles
+            </div>
+            <p class="menu-item-desc">Stir-fried noodles with scrambled eggs</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹160</div>
+            <button class="add-to-order" data-name="Egg Noodles" data-price="160"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="noodles" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Special Noodles
+            </div>
+            <p class="menu-item-desc">Premium noodles loaded with chicken, egg & veggies</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹200</div>
+            <button class="add-to-order" data-name="Special Noodles" data-price="200"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="noodles" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Schezwan Chicken Noodles
+            </div>
+            <p class="menu-item-desc">Spicy schezwan noodles with chicken & peppers</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹200</div>
+            <button class="add-to-order" data-name="Schezwan Chicken Noodles" data-price="200"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="noodles" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Chilli Garlic Noodles
+            </div>
+            <p class="menu-item-desc">Fiery noodles loaded with garlic & green chillies</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹170</div>
+            <button class="add-to-order" data-name="Chilli Garlic Noodles" data-price="170"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <!-- Gravies Category -->
+        <div class="menu-category-header fade-in" data-category="gravy">
+          <h3><i class="fas fa-pepper-hot" aria-hidden="true"></i> Gravies & Curries</h3>
+        </div>
+        <div class="menu-item fade-in" data-category="gravy" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Manchurian Gravy
+            </div>
+            <p class="menu-item-desc">Chicken balls in tangy soy-chilli gravy</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹230</div>
+            <button class="add-to-order" data-name="Chicken Manchurian Gravy" data-price="230"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="gravy" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Chicken Schezwan Gravy
+            </div>
+            <p class="menu-item-desc">Spicy schezwan sauce with boneless chicken</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹250</div>
+            <button class="add-to-order" data-name="Chicken Schezwan Gravy" data-price="250"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="gravy" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Paneer Manchurian Gravy
+            </div>
+            <p class="menu-item-desc">Paneer balls in rich Manchurian gravy</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹220</div>
+            <button class="add-to-order" data-name="Paneer Manchurian Gravy" data-price="220"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="gravy" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Veg Manchurian Gravy
+            </div>
+            <p class="menu-item-desc">Mixed veg balls in tangy Manchurian sauce</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹200</div>
+            <button class="add-to-order" data-name="Veg Manchurian Gravy" data-price="200"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <!-- Specials Category -->
+        <div class="menu-category-header fade-in" data-category="specials">
+          <h3><i class="fas fa-crown" aria-hidden="true"></i> Chef's Specials & Combos</h3>
+        </div>
+        <div class="menu-item fade-in" data-category="specials" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              CHOP 46 Special Combo
+              <span class="menu-special-badge">🔥 Best Value</span>
+            </div>
+            <p class="menu-item-desc">Chicken Crispy + Fried Rice + Cold Drink — the ultimate meal deal</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹350</div>
+            <button class="add-to-order" data-name="CHOP 46 Special Combo" data-price="350"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="specials" data-diet="nonveg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator non-veg" title="Non-Vegetarian"><i class="fas fa-square"></i></span>
+              Dragon Fire Platter
+              <span class="menu-special-badge">🌶️ Extra Spicy</span>
+            </div>
+            <p class="menu-item-desc">Dragon Chicken + Schezwan Noodles — for spice lovers</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹400</div>
+            <button class="add-to-order" data-name="Dragon Fire Platter" data-price="400"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+        <div class="menu-item fade-in" data-category="specials" data-diet="veg" role="listitem">
+          <div class="menu-item-info">
+            <div class="menu-item-name">
+              <span class="veg-indicator veg" title="Vegetarian"><i class="fas fa-square"></i></span>
+              Veg Special Combo
+              <span class="menu-special-badge">🌿 Veg</span>
+            </div>
+            <p class="menu-item-desc">Paneer Chilli + Veg Hakka Noodles + Cold Drink</p>
+          </div>
+          <div class="menu-item-right">
+            <div class="menu-item-price">₹320</div>
+            <button class="add-to-order" data-name="Veg Special Combo" data-price="320"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Image Preview -->
+      <div class="menu-image-preview fade-in">
+        <details>
+          <summary><i class="fas fa-image" aria-hidden="true"></i> View Menu Card Image</summary>
+          <div class="menu-image-container">
+            <img src="IMG 9.jpg" alt="CHOP 46 Complete Menu Card - Chinese Food Kalwa Thane" loading="lazy">
+          </div>
+        </details>
+      </div>
+
+      <!-- Order CTA -->
+      <div class="menu-order-cta fade-in">
+        <p>Ready to order? Call us or message on WhatsApp!</p>
+        <div class="menu-order-buttons">
+          <a href="tel:+917710904746" class="btn btn-primary" id="menu-cta-call">
+            <i class="fas fa-phone" aria-hidden="true"></i> Call to Order
+          </a>
+          <a href="https://wa.me/917710904746?text=Hi%20CHOP%2046!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="btn btn-whatsapp" id="menu-cta-wa">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Order
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="CHOP 46 Home">CHOP 46<span>Chinese Cuisine</span></a>
+          <p>Kalwa's favorite Chinese restaurant. Bold flavors, fiery woks, and unforgettable experiences.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/the.chop46" target="_blank" rel="noopener" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917710904746" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://maps.google.com/?q=CHOP+46+Kalwa+Thane" target="_blank" rel="noopener" aria-label="Find us on Google Maps"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Timings</h4>
+          <ul class="footer-timings">
+            <li><i class="fas fa-clock"></i> Monday – Sunday</li>
+            <li><i class="fas fa-sun"></i> 12:00 PM – 3:30 PM</li>
+            <li><i class="fas fa-moon"></i> 4:30 PM – 1:00 AM</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach Us</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Shop No 4, Rajul Society, Near Swimming Pool, Kalwa, Thane - 400605</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+917710904746">77109 04746</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span>CHOP 46</span> Chinese Cuisine. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Cart FAB -->
+  <button class="cart-fab empty" id="cartFab" aria-label="View your order">
+    <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3><i class="fas fa-shopping-bag" style="color: var(--primary);"></i> Your Order</h3>
+      <button class="cart-drawer-close" id="cartClose" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-drawer-body" id="cartBody">
+      <div class="cart-empty">
+        <i class="fas fa-shopping-bag"></i>
+        <p>Your order is empty</p>
+        <p style="font-size: 0.8rem; margin-top: 8px;">Add items from the menu to build your WhatsApp order</p>
+      </div>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total" id="cartTotal">
+        <span>Total</span><span>₹0</span>
+      </div>
+      <button class="btn btn-whatsapp cart-checkout" id="cartCheckout" style="display: none;">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i> Send Order via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Mobile Sticky Buttons -->
+  <a href="tel:+917710904746" class="sticky-call" id="stickyCall" aria-label="Call CHOP 46"><i class="fas fa-phone"></i></a>
+  <a href="https://wa.me/917710904746?text=Hi%20CHOP%2046!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="sticky-whatsapp" id="stickyWhatsapp" aria-label="Order on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
